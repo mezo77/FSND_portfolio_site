@@ -1,9 +1,13 @@
+
+
 .main-header {
   border-bottom: 5px solid #7d97ad;
   display: inline-block;
   width: 100%;
   overflow: auto;
 }
+
+
 #logo {
   display: inline-block;
   position: relative;
@@ -11,6 +15,8 @@
   margin-bottom: 5px;
   overflow: auto;
 }
+
+
 #name-job {
   display: inline-block;
   position: relative;
@@ -19,10 +25,14 @@
   text-align: right;
   font-family:  helvetica, arial, sans-serif;
 }
+
+
 img {
   max-width: 100%;
   max-height: 100%;
 }
+
+
 .main-content {
   max-width: 100%;
   max-height: 100%;
@@ -37,13 +47,15 @@ img {
   color: #7d97ad;
 }
 
+
 .footer {
   width: 100%;
   display: flex;
   overflow: auto;
   margin-bottom: 15px;
-  white-space: normal;
 }
+
+
 .project {
   max-width: 100%;
   max-height: 100%;
@@ -55,6 +67,8 @@ img {
   font-size: 10pt;
   text-align: center;
 }
+
+
 .caption {
   text-align: center;
   font-size: 3em;
@@ -63,6 +77,8 @@ img {
   text-overflow: ellipsis; */
 
 }
+
+
 @media screen and (min-width:150px) and (max-width:299px){
   .caption {
       text-align: center;
@@ -92,6 +108,7 @@ img {
   }
 }
 
+
 @media screen and (min-width:300px) and (max-width:550px){
   .caption {
       text-align: center;
@@ -118,8 +135,16 @@ img {
   .source {
     font-size: 1.5pt;
     text-align: center;
+    word-wrap: break-word;
+  }
+
+  .project img {
+    max-width: 200%;
+    min-width: 150%;
   }
 }
+
+
 @media screen and (min-width:350px) and (max-width:700px) {
   .caption {
       text-align: center;
@@ -135,7 +160,15 @@ img {
   .main-header img {
     content: url(../img/Code_60px.png);
   }
+
+
+  .project img {
+    max-width: 100%;
+    min-width: 50%;
+  }
 }
+
+
 @media screen and (min-width:701px) and (max-width:800px) {
   .caption {
       text-align: center;
@@ -154,8 +187,11 @@ img {
   .source {
     font-size: 15px;
     text-align: center;
+    word-wrap: break-word;
   }
 }
+
+
 @media screen and (min-width:801px) and (max-width:1000px)
 {
   .caption {
@@ -172,7 +208,15 @@ img {
   .main-header img {
     content: url(../img/code_80px.png);
   }
+
+  .source {
+    font-size: 15px;
+    text-align: center;
+    word-wrap: break-word;
+  }
 }
+
+
 @media screen and (min-width:1001px) and (max-width:1080px) {
   .caption {
       text-align: center;
@@ -191,9 +235,29 @@ img {
   .source {
     font-size: 20px;
     text-align: center;
+    word-wrap: break-word;
   }
 }
-h4 {
-  text-overflow: ellipsis;
-  word-wrap: break-word;
+
+
+@media screen and (min-width:1024px) {
+  .caption {
+      text-align: center;
+      font-size: 2em;
+      text-transform: uppercase;
   }
+  .main-header h1 {
+    font-size: 23px;
+  }
+  .main-header h3 {
+    font-size: 17px;
+  }
+  .main-header img {
+    content: url(../img/code_60px.png);
+  }
+  .source {
+    font-size: 25px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+}
