@@ -8,7 +8,7 @@
 }
 
 
-#logo {
+.logo {
   display: inline-block;
   position: relative;
   float: left;
@@ -17,7 +17,7 @@
 }
 
 
-#name-job {
+.name-job {
   display: inline-block;
   position: relative;
   float: right;
@@ -33,17 +33,19 @@ img {
 }
 
 
-.main-content {
+main {
   max-width: 100%;
   max-height: 100%;
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px;
   text-align: center;
 }
+
+
 
 .featured-work {
   text-align: left;
   text-transform: capitalize;
-  margin: 10px 0px 0px 25px;
+  margin: 10px 0 0 25px;
   color: #7d97ad;
 }
 
@@ -61,14 +63,19 @@ img {
   max-height: 100%;
   min-height: 100px;
   min-width: 100px;
+}
+
+.project img {
   cursor: pointer;
 }
 .source {
-  font-size: 10pt;
+  font-size: 20px;
   text-align: center;
 }
 
-
+a {
+  color: inherit;
+}
 .caption {
   text-align: center;
   font-size: 3em;
@@ -78,6 +85,34 @@ img {
 
 }
 
+.contact-me {
+  display: inline-block;
+}
+
+i {
+  position: relative;
+  left: 5px;
+  padding: 10px;
+}
+
+.fa-facebook {
+  color: #4267b2;
+}
+
+
+.fa-twitter {
+  color: #1fa5de;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+
+.contact-me p {
+  font-family: sans-serif, helvetica, arial, times;
+  font-size: 1em;
+}
 
 @media screen and (min-width:150px)
  and (max-width:299px) {
@@ -90,7 +125,7 @@ img {
     font-size: 12px;
     text-align: left;
     text-transform: capitalize;
-    margin: 3px 0px 0px 7px;
+    margin: 3px 0 0 7px;
     color: #7d97ad;
   }
   .main-header h1 {
@@ -104,12 +139,12 @@ img {
     vertical-align: bottom;
   }
   .source {
-    font-size: 1.5pt;
+    font-size: 0.5em;
     text-align: center;
   }
 }
 
-
+/* nexus 5 */
 @media screen and (min-width:300px)
 and (max-width:550px) {
   .caption {
@@ -135,7 +170,7 @@ and (max-width:550px) {
     vertical-align: bottom;
   }
   .source {
-    font-size: 1.5pt;
+    font-size: 1em;
     text-align: center;
     word-wrap: break-word;
   }
@@ -183,13 +218,13 @@ and (max-width:550px) {
     font-size: 20px;
   }
   .main-header h3 {
-    font-size: 12px;
+    font-size: 15px;
   }
   .main-header img {
     content: url(../img/code_60px.png);
   }
   .source {
-    font-size: 15px;
+    font-size: 1.5em;
     text-align: center;
     word-wrap: break-word;
   }
@@ -214,11 +249,12 @@ and (max-width:550px) {
   }
 
   .source {
-    font-size: 15px;
+    font-size: 1.5em;
     text-align: center;
     word-wrap: break-word;
   }
 }
+
 
 
 @media screen and (min-width:1001px)
@@ -238,7 +274,7 @@ and (max-width:550px) {
     content: url(../img/code_80px.png);
   }
   .source {
-    font-size: 20px;
+    font-size: 1.5em;
     text-align: center;
     word-wrap: break-word;
   }
@@ -262,7 +298,7 @@ and (max-width:1080px) {
     content: url(../img/code_80px.png);
   }
   .source {
-    font-size: 25px;
+    font-size: 2.2em;
     text-align: center;
     word-wrap: break-word;
   }

@@ -1,51 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio site</title>
-  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
   <header class="main-header">
-      <div id="logo">
+      <div class="logo">
         <img src="img/code_100px.png" alt="logo" />
       </div>
-      <div id="name-job">
+      <div class="name-job">
         <h1>muataz mahmoud</h1>
         <h3>front-end ninja</h3>
       </div>
   </header>
-  <div class="main-content">
+  <main>
     <img src="img/html.jpg" alt="html script picture"  />
-  </div>
+  </main>
   <h1 class="featured-work">featured work</h1>
 
-  <!-- the sources of the projects are not real they are like a template for a real portfolio site with real projects -->
-  <footer class="footer parent">
-    <div class="project">
+  <!-- TODO: adding the real sorces of the real projects -->
+  <section class="footer parent">
+    <article class="project">
       <figure>
-        <img src="img/strawberry.jpeg" alt="starwberry project"/>
+        <img src="img/strawberry.jpeg" alt="starwberry project">
         <figcaption class="caption">strawberry</figcaption>
       </figure>
-      <p class="source">https://www.github.com/myprojects/strawberry</p>
-    </div>
-    <div class="project">
+      <a href="https://www.github.com/myprojects/strawberry" target="_blank">
+        <p class="source">project link</p>
+      </a>
+    </article>
+    <article class="project">
       <figure>
-        <img src="img/doctor_phone.jpeg" alt="doctor phone project" />
+        <img src="img/doctor_phone.jpeg" alt="doctor phone project">
         <figcaption class="caption">Dr.phone</figcaption>
       </figure>
-      <p class="source">
-        https://www.github.com/myprojects/snake</p>
-    </div>
-    <div class="project">
+      <a href="https://www.github.com/myprojects/doctorphone" target="_blank">
+        <p class="source">project link</p>
+      </a>
+    </article>
+    <article class="project">
       <figure>
-        <img src="img/VR2.jpeg" alt="VR project" />
+        <img src="img/VR2.jpeg" alt="VR project">
         <figcaption class="caption">VR</figcaption>
       </figure>
-      <p class="source">https://www.github.com/myprojects/vr</p>
-    </div>
-  </footer>
+      <a href="https://www.github.com/myprojects/vr" target="_blank">
+        <p class="source">project link</p>
+      </a>
+    </article>
+  </section>
+  <section class="contact-me">
+    <p class="contact-me">contact me </p>
+    <a href="https://github.com/mezo77" target="_blank">
+      <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.facebook.com/muataz.mahmoud77" target="_blank">
+      <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="https://twitter.com/muatazbattah" target="_blank">
+      <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/muataz-mahmoud-233036104"     target="_blank">
+      <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+    </a>
+
+  </section>
+
+
 
 </body>
+
 </html>
